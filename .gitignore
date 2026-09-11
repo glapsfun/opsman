@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*~
+
+# Local agent/tooling state
+.claude/settings.local.json
+.agents/*
+
+# Secrets / local env
+.env
+.envrc
+
+# opsman run state (the kernel writes this into whatever repo it runs against)
+.opsman/

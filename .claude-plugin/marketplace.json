@@ -1,0 +1,17 @@
+{
+  "name": "opsman",
+  "description": "Local-first meta-agent orchestrator for Dev and Ops tasks — discovers repository-local skills, selects the smallest team, runs a test-first evidence-gated loop with deterministic POSIX state, and gates completion behind an independent Oracle, distributed as a Claude Code plugin and as a standard Agent Skill",
+  "owner": {
+    "name": "vladtara",
+    "email": "vlad@glaps.fun"
+  },
+  "plugins": [
+    {
+      "name": "opsman",
+      "source": "./plugins/opsman",
+      "description": "Local-first meta-agent orchestrator for Dev and Ops tasks — discovers repository-local skills, selects the smallest team, runs a test-first evidence-gated loop with deterministic POSIX state, and gates completion behind an independent Oracle",
+      "category": "cloud-native",
+      "tags": ["orchestrator", "meta-agent", "automation", "tdd", "posix"]
+    }
+  ]
+}
