@@ -15,5 +15,9 @@
 .env
 .envrc
 
+# AI
+docs
+.docs
+
 # opsman run state (the kernel writes this into whatever repo it runs against)
 .opsman/

@@ -112,6 +112,12 @@ Omit `--global` to install into the current project instead. Verify with
 `npx skills list -a codex`, and restart the agent afterwards so the new skill
 metadata is loaded.
 
+When developing this repository with Codex, the checked-in
+`.codex/config.toml` selects `gpt-6-astra` at medium reasoning effort. Skill
+installations do not copy project configuration into consuming repositories;
+set the same model in the consumer's trusted `.codex/config.toml` or with
+the CLI `--model gpt-6-astra` override when Astra is available to the account.
+
 > **Note:** `npx skills` implements the Agent Skills standard and copies
 > **only** the skill folder. The plugin-level `commands/` directory is not
 > part of that standard, so the `/opsman`, `/opsman-status`, `/opsman-resume`

@@ -12,9 +12,14 @@ shell proves. All run state lives in the target repository under `.opsman/`
 
 ## The one rule
 
-**Interact with run state ONLY through the `opsman` kernel.** Never edit
-files under `.opsman/` by hand, and never skip recording an event. If you
-did work, `opsman record` it — unrecorded work does not exist.
+**Interact with kernel-owned run state ONLY through the `opsman` kernel.**
+Never hand-edit `state.json`, `events.jsonl`, evidence metadata, derived
+handoffs, or other kernel-owned files, and never skip recording an event.
+Role-owned planning artifacts (`problem.yaml`, `questions.yaml`,
+`selected-skills.yaml`, `plan.yaml`, and `acceptance.yaml`) may be authored in
+the run directory by their owning role; payloads such as an Oracle verdict may
+be prepared by the coordinator and then passed to `opsman record`. If you did
+work, record it — unrecorded work does not exist.
 
 The kernel lives at `scripts/opsman` inside this skill. Call it with the
 skill's absolute path, e.g. `<skill-dir>/scripts/opsman status`.

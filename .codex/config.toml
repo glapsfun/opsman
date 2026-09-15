@@ -1,0 +1,4 @@
+# Project-local Codex defaults for developing and operating Opsman.
+# Consumers installing the skill retain their own host configuration.
+model = "gpt-6-astra"
+model_reasoning_effort = "medium"

@@ -74,6 +74,11 @@ Codex:
 npx skills add glapsfun/opsman --skill opsman --agent codex --global -y
 ```
 
+For this checkout, Codex uses the project-local `.codex/config.toml` default
+`gpt-6-astra` with medium reasoning effort. Installing the skill elsewhere
+does not copy that file; configure the consumer project or pass
+`--model gpt-6-astra` explicitly when the model is available.
+
 Requirements: `git` and `jq` on PATH (the kernel fails fast with exit 7 if
 either is missing). Runs must start inside a git repository. The optional
 `opsman board` viewer additionally needs `python3`.
